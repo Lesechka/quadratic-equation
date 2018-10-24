@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--suppress ALL, JSAnnotator -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<article></article>
+<script type="text/javascript">
+    module.exports = function solveEquation(equation) {
+        equation = new Object();
+        equation.init = function () {
+            this.a = parseInt(a.value);
+            this.b = parseInt(b.value);
+            this.c = parseInt(c.value);
+        }
+        equation.solve = function () {
+            this.init();
+            D = this.b * this.b - 4 * this.a * this.c;
+            if (D >= 0) {
+                this.x1 = (-this.b - Math.sqrt(D)) / (2 * this.a);
+                this.x2 = (-this.b + Math.sqrt(D)) / (2 * this.a);
+                return x1, x2;
+            } else {
+                alert("Корней нет");
+            }
+        }
+    }
+    solveEquation('-20 * x^2 - 108797540 * x - 130011773690520');
+</script>
+</body>
+</html>
